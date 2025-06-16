@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>GBPテンプレート自動生成ツール</title>
+</head>
+<body style="font-family: sans-serif; padding: 20px; background: #f4f4f4;">
+  <h1 style="color: #1a3c80;">GBPテンプレート自動生成ツール</h1>
+
+  <label>教室名:</label>
+  <input type="text" id="schoolName" placeholder="例：岸和田教室"><br><br>
+
+  <label>日付:</label>
+  <input type="text" id="postDate" placeholder="例：2025年6月21日"><br><br>
+
+  <label>カテゴリを選択:</label>
+  <select id="categorySelect"></select><br><br>
+
+  <label>テンプレートを選択:</label>
+  <select id="templateSelect"></select><br><br>
+
+  <h3>出力結果</h3>
+  <textarea id="outputBody" rows="10" style="width:100%;"></textarea><br><br>
+  <button onclick="copyText()">コピー</button>
+
+  <script src="templates.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
